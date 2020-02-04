@@ -5,10 +5,9 @@ const routes = new Router();
 
 let projects = [{ id: 1, title: "project 01", tasks: ['1', '2'] }]
 
-let requestCount = 0
 
 routes.use((req, res, next) => {
-  console.log(`requests count ${requestCount++}`)
+  console.count(`requests count `)
   return next()
 })
 
